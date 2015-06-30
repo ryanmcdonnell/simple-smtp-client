@@ -179,6 +179,7 @@ namespace GUISmtpClient
                 SendMessage.Subject = MainApplication.MessageToSend.Subject;
                 SendMessage.Body = MainApplication.MessageToSend.Body;
                 SendMessage.BodyEncoding = MainApplication.MessageToSend.BodyEncoding;
+	            SendMessage.IsBodyHtml = MainApplication.MessageToSend.IsBodyHtml;
 
                 SmtpClient SendMail = new SmtpClient();
                 NetworkCredential Authentication = new NetworkCredential();
